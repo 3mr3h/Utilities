@@ -1,3 +1,7 @@
+'''
+@author: Emre Hosgor
+Aim: Finds acronyms in a document. Used for PhD thesis :)
+'''
 # pip install re
 # pip install python-docx
 import re
@@ -47,7 +51,8 @@ def main(docx_path, output_path):
         print(acronym)
     save_acronyms_to_txt(acronyms, output_path)
 
-# Example usage
+# Example usage 
+# change the pathe.
 docx_path = r'G:\My Drive\0.All\0.Academic\0.METU\1.THESIS WORK\PHD_IS\2.Thesis\060324\9.ThesisDraft.docx'
 output_path = r'G:\My Drive\0.All\0.Academic\0.METU\1.THESIS WORK\PHD_IS\2.Thesis\060324\acronyms.txt'
 main(docx_path, output_path)
